@@ -1,0 +1,25 @@
+name: OrgaQuantBeekman Build
+
+on: [push]
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+    - name: Install dependencies
+      run: |
+        C:\Miniconda\condabin\conda.bat env update --file environment.yml
+        C:\Miniconda\condabin\conda.bat init powershell
+    - name: Conda pack
+      run: |
+        # Activate the OrgaQuant environment
+        C:\Miniconda\condabin\conda.bat activate OrgaQuant
+        cd
+        conda pack -n OrgaQuant
+        dir
