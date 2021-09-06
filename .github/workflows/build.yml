@@ -18,8 +18,11 @@ jobs:
         C:\Miniconda\condabin\conda.bat init powershell
     - name: Conda pack
       run: |
-        # Activate the OrgaQuant environment
         C:\Miniconda\condabin\conda.bat activate OrgaQuant
-        cd
-        conda pack -n OrgaQuant
-        dir
+        C:\Miniconda\condabin\conda.bat pack -n OrgaQuant -o env.tar.gz
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: dist-without-markdown
+        path: |
+          env.tar.gz
