@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - anaconda
 dependencies:
-  - python=3.7
+  - python=3.7.6
   - pip=21.0
   - pylint=2.6.0
   - pip:
@@ -12,7 +12,7 @@ dependencies:
     - opencv-python==4.5.3.56
     - jupyter==1.0.0
     - jupyter_contrib_nbextensions==0.5.1
-    - numpy==1.19.5
+    - numpy==1.20.0
     - pandas==1.2.2
     - matplotlib==3.4.3
     - h5py==2.10.0
