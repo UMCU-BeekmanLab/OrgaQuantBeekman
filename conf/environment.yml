@@ -13,10 +13,10 @@ dependencies:
   - matplotlib=3.4.3
   - opencv=4.5.1
   - h5py=2.10.0
-  - keras=2.3.1
   - trackpy=0.5.0
   - conda-pack=0.6.0
   - pip:
     - tensorflow-gpu==2.2.0
+    - keras==2.3.1
     - git+https://github.com/UMCU-BeekmanLab/OrgaQuant
     - ipywidgets==7.6.4
