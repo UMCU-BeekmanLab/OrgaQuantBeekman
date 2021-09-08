@@ -25,7 +25,6 @@ jobs:
         python-version: 3.7
     - name: Install dependencies
       run: |
-        echo "Installing dependencies for OrgaQuantBeekman-${{ GITHUB_REF }}"
         C:\Miniconda\condabin\conda.bat env create -f conf/environment.yml
         C:\Miniconda\condabin\conda.bat init powershell
     - name: Conda pack
