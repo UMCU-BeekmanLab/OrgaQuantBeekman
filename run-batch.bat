@@ -1,5 +1,6 @@
-call env\Scripts\activate.bat
-for /d %%i in (data\) do (
-    python scripts/batchDetection.py "%%i" > "%%ioutput.log"
+call env\Scripts\activate
+for /d %%i in (data\*) do (
+    echo %%i
+    call python scripts/batchDetection.py "%%i" > "%%i/output.log"
     ) 
 PAUSE

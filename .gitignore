@@ -1,0 +1,3 @@
+*.tar.gz
+env/*
+.ipynb_checkpoints/*

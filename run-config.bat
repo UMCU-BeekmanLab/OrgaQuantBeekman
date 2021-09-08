@@ -1,2 +1,3 @@
-bash.exe -c ./scripts/run-config.sh
+call env\Scripts\activate
+call jupyter notebook scripts/configDetection.ipynb
 PAUSE

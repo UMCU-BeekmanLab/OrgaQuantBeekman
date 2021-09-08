@@ -27,7 +27,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 ## Supress TF warnings
-tf.logging.set_verbosity(tf.logging.ERROR)
+#tf.logging.set_verbosity(tf.logging.ERROR)
 
 ## Set TF
 setup_gpu(0)
