@@ -1,3 +1,4 @@
 call env\Scripts\activate
-call jupyter notebook scripts/configDetection.ipynb
+call jupyter nbextension enable hide_input_all
+call jupyter notebook scripts\configDetection.ipynb
 PAUSE
