@@ -4,19 +4,19 @@ channels:
   - anaconda
 dependencies:
   - python=3.7
-  - jupyter=1.0.0
-  - jupyter_contrib_nbextensions=0.5.1
   - pip=21.0
   - pylint=2.6.0
-  - numpy=1.19.5
-  - pandas=1.2.2
-  - matplotlib=3.4.3
-  - opencv=4.5.1
-  - h5py=2.10.0
-  - trackpy=0.5.0
-  - conda-pack=0.6.0
   - pip:
     - tensorflow-gpu==2.2.0
     - keras==2.3.1
-    - git+https://github.com/UMCU-BeekmanLab/OrgaQuant
+    - jupyter==1.0.0
+    - jupyter_contrib_nbextensions==0.5.1
+    - numpy==1.19.5
+    - pandas==1.2.2
+    - matplotlib==3.4.3
+    - opencv==4.5.1
+    - h5py==2.10.0
+    - trackpy==0.5.0
+    - conda-pack==0.6.0
     - ipywidgets==7.6.4
+    - git+https://github.com/UMCU-BeekmanLab/OrgaQuant
