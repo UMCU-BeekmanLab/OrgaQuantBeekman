@@ -14,11 +14,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Get correct ref
-        run: |
-          echo "::set-env name=GITHUB_REF::${{ github.ref }}"
-          echo "old GITHUB_REF is $GITHUB_REF"
-          GITHUB_REF=$(echo $GITHUB_REF | sed -e "s#.*/.*/##g")
-          echo "new GITHUB_REF is $GITHUB_REF"
+      run: |
+        echo "::set-env name=GITHUB_REF::${{ github.ref }}"
+        echo "old GITHUB_REF is $GITHUB_REF"
+        GITHUB_REF=$(echo $GITHUB_REF | sed -e "s#.*/.*/##g")
+        echo "new GITHUB_REF is $GITHUB_REF"
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
