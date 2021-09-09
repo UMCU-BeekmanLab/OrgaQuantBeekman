@@ -44,6 +44,7 @@ if os.path.isdir(input_dir) == False:
             exit(0)
 else:
     input_dir=os.path.join(input_dir, '')
+    logger.info(f'Data dir: {input_dir}')
 
 #Process 
 def main():
